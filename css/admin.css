@@ -1,0 +1,81 @@
+/*Админская часть*/
+#admin_block {
+	font: 12pt "Segoe UI";
+	color: #505050;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+#admin_block .admin_complaint:nth-child(even) {
+	background: #fbfbfb;
+}
+#admin_block .admin_complaint,#admin_block #admin_complaint_head {
+	padding: 10px 5px;
+	border-bottom: 2px solid #505050;
+}
+#admin_block span {
+	text-align: center;
+	display: inline-block;
+	vertical-align: text-top;
+}
+#admin_block #admin_complaint_head span {
+	font: bold 16pt "Segoe UI";
+	text-align: center;
+}
+#admin_block span.admin_user {
+	width: 15%;
+}
+#admin_block span.admin_complaint_theme {
+	width: 50%;
+}
+#admin_block span.admin_date {
+	width: 20%;
+}
+#admin_block span.admin_answer_link {
+	width: 13%;
+}
+#admin_block span.admin_user a, #admin_block span.admin_complaint_theme a{
+	text-decoration: none;
+	color: #505050
+}
+#admin_block span.admin_user a:hover, #admin_block span.admin_complaint_theme a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+#admin_block span.admin_answer_link a {
+	font-weight: bold;
+	color: #505050;
+	font-size: 14pt;
+}
+#admin_block span.admin_answer_link a:hover {
+	color: #000;
+}
+#admin_block a#admin_answer_button, #admin_block input[type='submit']#answer_submit {
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	color: #505050;
+	padding: 10px 0;
+	width: 200px; 
+	border: 1px solid #e70202;
+	background: #fff;
+	font:14pt "Segoe UI";
+}
+#admin_block a#admin_answer_button:hover, #admin_block input[type='submit']#answer_submit:hover {
+	background: #e70202;
+	color: #fff;
+	cursor: pointer;
+}
+#admin_block textarea#answer {
+	width: 978px;
+	height: 400px;
+	border: 1px solid #505050;
+	margin-bottom: 30px;
+	padding: 10px;
+	font: 12pt "Segoe UI";
+	resize: none;
+}
+#admin_block .admin_errors {
+	font: 10pt "Segoe UI";
+	color: red;
+}

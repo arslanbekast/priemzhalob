@@ -1,0 +1,363 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	color: #000; 
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+*,a,img {
+	outline: 0;
+}
+*:focus {
+	outline: 0;
+}
+/*Основной контейнер*/
+#container {
+	position: relative;
+	font-family: "Segoe UI";
+	border: none;
+	margin: 20px auto;
+	width: 1000px;
+	min-height: 500px;
+	/*overflow: hidden;*/
+}
+
+/*Шапка*/
+header {
+	position: relative;
+	height: 45px;
+	margin: 0;
+	margin-bottom: 30px;
+	overflow: hidden;
+	/*padding: 10px 0;*/
+	border-bottom: 1px solid #e70202;
+}
+header h1 {
+	float: left;
+	margin: 0;
+	padding: 0;
+	height: 41px;
+	width: 390px;
+}
+header h1 a {
+	display: inline-block;
+	text-decoration: none;
+	background: url("../img/logo.png") no-repeat;
+	height: 41px;
+	width: 390px;
+}
+header #greeting {
+	position: absolute;
+	bottom: 3px;
+	right: 0;
+	color: #505050;
+	font: 14pt "Segoe UI";
+}
+header #greeting a {
+	text-decoration: none;
+	color: #505050;
+}
+header #greeting a.vhod_text {
+	margin-right: 15px;
+}
+/*КОНЕЦ Шапка*/
+
+/*Форма входа/регистрации*/
+#vhod_reg_block {
+	background: #505050;
+	text-align: center;
+	width: 400px;
+	margin: auto;
+	padding-bottom: 0;
+	border: 2px solid #505050;
+	/*border-radius: 10px; */
+	overflow: hidden;
+}
+#vhod_reg_block #vhod, #vhod_reg_block #reg {
+	float: left;
+	width: 50%;
+	background: #505050;
+	/*border-radius: 10px 10px 0 0; */
+	padding: 4px 0;
+	padding-bottom: 17px;
+}
+#vhod_reg_block #vhod {
+	background: #e70202;
+}
+#vhod_reg_block #vhod p, #vhod_reg_block #reg p {
+	cursor: pointer;
+	font: 14pt "Segoe UI";
+	color: #fff;
+	margin: 0; 
+	padding: 0;
+}
+#vhod_reg_block #vhod_reg {
+	position: relative;
+	z-index: 9999;
+	margin-top: 36px;
+	background: #fff;
+	/*clear: both;*/
+	padding: 50px 0;
+	/*border-radius: 10px 10px 0 0;*/
+}
+#vhod_reg_block #vhod_reg #vhod_reg_forms {
+	position: relative;
+	text-align: center;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	padding-top: 1px;
+	overflow: hidden;
+	width: 70%;
+}
+#vhod_reg_forms input[type="text"], #vhod_reg_forms input[type="password"], #vhod_reg_forms .captcha {
+	width: 99%;
+	text-align: center;
+	border: 1px solid #e70202;
+	padding: 8px 0;
+	margin-bottom: 15px;
+	font: 14pt "Segoe UI";
+	color: #e70202;
+}
+#vhod_reg_forms .captcha {
+	width: 99%;
+	display: inline-block;
+	overflow: hidden;
+	padding: 5px 0;
+	height: 31px;
+	margin-bottom: 11px;
+}
+#vhod_reg_forms button {
+	width: 100%;
+	text-align: center;
+	border: 1px solid #e70202;
+	padding: 8px 3px;
+	cursor: pointer;
+	margin-top: 20px;
+	background: #e70202;
+	color: #fff;
+	font: 14pt "Segoe UI";
+
+}
+#vhod_reg_forms button#reg_button {
+	display: none;
+}
+/*КОНЕЦ Форма входа/регистрации*/
+
+/*Форма для написания жалобы*/
+#main {
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+#system_info_block {
+	display: none;
+	background:rgba(0,0,0,0);
+	position:absolute;
+	width:100%;
+	height:100%;
+	z-index:999;
+}
+#system_info {
+	margin: auto;
+	margin-top: -999px;
+	text-align: center;
+	background: #fbfbfb;
+	width: 500px;
+	padding: 30px 10px;
+	-webkit-box-shadow: 0 0 1px #505050;
+	-moz-box-shadow: 0 0 1px #505050;
+	-o-box-shadow: 0 0 1px #505050;
+	box-shadow: 0 0 1px #505050;
+}
+#system_info #system_info_text {
+	display: inline-block;
+	font: 14pt "Segoe UI";
+	margin-bottom: 30px;
+} 
+#system_info #system_info_ok {
+	width: 150px;
+	padding: 8px 0;
+	font: 14pt "Segoe UI";
+	border: 1px solid #e70202;
+	background: #fbfbfb;
+	color: #e70202;
+}
+#system_info #system_info_ok:hover {
+	background: #e70202;
+	color: #fff;
+	cursor: pointer;
+}
+#is_answer_block {
+	z-index: 9999;
+	position: fixed;
+	top: 0;
+	background: rgba(0,0,0,0.8);
+	display: none;
+	width: 100%;
+	height: 100%;
+	margin-bottom: 0;
+}
+#is_answer_block #answer_close {
+	position: fixed;
+	right: 0;
+	text-align: center;
+	padding: 5px;
+	cursor: pointer;
+}
+#is_answer_block #answer_close a {
+	color: #ccc;
+	font: 12pt "Segoe UI";
+}
+#is_answer_block #answer_close a:hover {
+	color: #fff;
+}
+#is_answer {
+	color: #505050;
+	-webkit-box-shadow: 0 0 5px #000;
+	-moz-box-shadow: 0 0 5px #000;
+	-o-box-shadow: 0 0 5px #000;
+	box-shadow: 0 0 5px #000;
+	padding: 10px;
+	display: none;
+	top: -9999px;
+	background: #fff;
+	z-index: 10000;
+	width: 980px;
+	height: 100%;
+	position: absolute;
+	overflow-y: auto;
+}
+
+#is_answer h3 {
+	font: bolder 14pt "Segoe UI";
+	margin: 0;
+	padding: 0;
+	margin-bottom: 10px;
+}
+#is_answer h4 {
+	padding: 0;
+	margin-bottom: 5px;
+	font: bolder 13pt "Segoe UI";
+}
+#is_answer p {
+	font-family: "Segoe UI";
+	padding: 0;
+	margin: 5px 0;
+	text-align: justify;
+}
+#is_answer p.answer {
+	/*height: 0;*/
+}
+#is_answer a {
+	color: #505050;
+}
+#is_answer .answer_block {
+	padding: 0;
+	margin-bottom: 10px;
+}
+.slide_answer span {
+	display: none;
+}
+.slide_answer:before {
+	content: "Скрыть";
+}
+#main #complaint_theme, #main textarea {
+	width: 978px;
+	border: 1px solid #505050;
+	margin-bottom: 30px;
+	padding: 10px;
+	font: 12pt "Segoe UI";
+}
+#main textarea {
+	height: 400px;
+	resize: none;
+}
+#main #main_forms {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+#main .captcha, #main #captcha, #main #reset, #main #complaint_submit {
+	width: 211px;
+	float: left;
+	margin-right: 50px;
+	/*margin-bottom: 30px;*/
+	border: 1px solid #e70202;
+	padding: 7px 0;
+	text-align: center;
+	background: #fff;
+	color: #e70202;
+	font: 14pt "Segoe UI";
+}
+#main .captcha {
+	overflow: hidden;
+	padding: 3px 0;
+	height: 33px;
+}
+#main #complaint_submit {
+	margin-right: 0;
+	margin-left: 1px;
+}
+#main #reset:hover, #main #complaint_submit:hover {
+	background: #e70202;
+	color: #fff;
+	cursor: pointer;
+}
+#main #reset:active, #main #complaint_submit:active {
+	background: #e70202;
+	color: #fff;
+}
+/*КОНЕЦ Форма для написания жалобы*/
+
+.captcha .a {
+	font: bold 22pt "Times New Roman";
+	color: #FF0000;
+}
+.captcha .plus {
+	font: bold 22pt "Courer New";
+	color: #C5FF00;
+}
+.captcha .b {
+	font: italic bold 18pt cursive;
+	color: #001431;
+}
+/*Подвал*/
+footer {
+	clear: both;
+	margin-top: 30px;
+	position: relative;
+	bottom: 0;
+}
+footer p{
+	margin: 0;
+	padding: 0;
+	font: 10pt "Segoe UI";
+	color: #505050;
+}
+
+/*Ошибки*/
+.vhod_reg_errors, .complaint_errors {
+	padding: 0;
+	margin: 0;
+	display: none;
+	font: 12px "Segoe UI";
+	color: red;
+}
+.vhod_reg_errors {
+	padding: 0;
+	margin-bottom: 2px;
+	line-height: 1em;
+}
+.complaint_errors {
+	padding-left: 2px;
+	line-height: 1em;
+	position: absolute;
+}
+
+/*КОНЕЦ Ошибки*/
+
